@@ -20,6 +20,7 @@ const getSum = () => {
 	let d2=document.createElement("td");
 	d1.innerText="total price";
 	row.appendChild(d1);
+	d2.id="ans";
 	d2.innerText=ans;
 	row.appendChild(d2);
 	table.appendChild(row);
