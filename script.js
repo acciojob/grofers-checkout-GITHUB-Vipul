@@ -13,9 +13,19 @@ const getSum = () => {
 			ans+=price;
         }
 	
-	return ans;
+	let table=document.getElementsByTagName("table").item(0);
+	
+	 let row=document.createElement("tr");
+	let d1=document.createElement("td");
+	let d2=document.createElement("td");
+	d1.innerText="total price";
+	row.appendChild(d1);
+	d2.innerText=ans;
+	row.appendChild(d2);
+	table.appendChild(row);
+	
   
 };
 
-getSumBtn.addEventListener("click", getSum);
+getSumBtn.addEventListener("click", getSum,{once:true});
 
